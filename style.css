@@ -27,11 +27,12 @@ header {
     padding: 5px 12px;
     font-family: inherit;
 }
+
 /* //영화카드 스타일링 */
 #movies-container {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 30px;
     justify-content: center;
     padding: 20px;
 }
@@ -43,6 +44,7 @@ header {
     overflow: hidden;
     width: 200px;
     text-align: center;
+    cursor: pointer;
 }
 
 .movie-card img {
