@@ -19,7 +19,6 @@ fetch('https://api.themoviedb.org/3/movie/popular?language=ko-KR&page=1', option
     })
     .catch(err => console.error(err));
 
-//title,poster_path,vote_average 넣기 클릭시 overview(요약) 보여주기
 // 영화 카드 생성 및 DOM에 추가.
 function displayMovies(moviesToDisplay) {
     moviesContainer.innerHTML = ''; // 기존 내용 초기화

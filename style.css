@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=Black+Han+Sans&family=Dongle&family=Gowun+Dodum&family=Noto+Sans+KR:wght@100..900&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -5,6 +6,7 @@
 }
 
 header {
+    font-family: "Noto Sans KR", serif;
     background-color: #A67665;
     color: #e3e3e3;
     text-align: center;
@@ -15,16 +17,16 @@ header {
 }
 .search-bar{
     margin: 20px 0;
-    
 }
 
 .search-bar input{
+    
     width: 600px;
     height: 40px;
     font-size: inherit;
     border: none;
     border-radius: 20px;
-    padding: 5px 12px;
+    padding: 10px 20px;
     font-family: inherit;
 }
 
