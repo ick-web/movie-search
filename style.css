@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #A67665;
+    color: #e3e3e3;
+    text-align: center;
+    padding: 20px 0;
+    height: 100%;
+    width: 100%;
+    
+}
+.search-bar{
+    margin: 20px 0;
+    
+}
+
+.search-bar input{
+    width: 600px;
+    height: 40px;
+    font-size: inherit;
+    border: none;
+    border-radius: 20px;
+    padding: 5px 12px;
+    font-family: inherit;
+}
+
