@@ -21,7 +21,7 @@ fetch('https://api.themoviedb.org/3/movie/popular?language=ko-KR&page=1', option
 
 // 영화 카드 생성 및 DOM에 추가.
 function displayMovies(moviesToDisplay) {
-    moviesContainer.innerHTML = ''; // 기존 내용 초기화
+    moviesContainer.innerHTML = ''; // 기존 내용 초기화 (새로운 영화 목록 표시)
     moviesToDisplay.forEach(movie => {
         const { title, poster_path, vote_average, id } = movie;
 
