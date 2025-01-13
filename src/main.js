@@ -94,10 +94,16 @@ function showMovieDetails(movie){
     closeButton.textContent = '닫기';
     closeButton.addEventListener('click', () => {
         document.body.removeChild(modal)
-
-    // 백그라운드를 클릭해도 닫아지게 하기
-
     });
+    // 백그라운드를 클릭해도 닫아지게 하기
+    modal.addEventListener('click', (e)=>{
+        if(e.target === modal){  //모달(배경) 클릭 시 닫음
+            
+            document.body.removeChild(modal)
+        }
+    })
+
+    
 
     modalContent.appendChild(title);
     modalContent.appendChild(poster);
