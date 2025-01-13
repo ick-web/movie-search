@@ -95,7 +95,7 @@ function showMovieDetails(movie){
     closeButton.addEventListener('click', () => {
         document.body.removeChild(modal)
 
-    
+    // 백그라운드를 클릭해도 닫아지게 하기
 
     });
 
