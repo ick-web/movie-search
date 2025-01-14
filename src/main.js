@@ -8,6 +8,7 @@ const options = {
 
 const moviesContainer = document.getElementById('movies-container');
 const searchInput = document.querySelector('.search-bar input');
+const bookMark = document.getElementById('book-mark')
 let movies = [];
 
 // TMDB API에서 인기 영화 가져오기
@@ -17,7 +18,6 @@ fetch('https://api.themoviedb.org/3/movie/popular?language=ko-KR&page=1', option
         movies = data.results; //영화 데이터 배열
         displayMovies(movies)
     })
-    
     .catch(err => console.error(err));
 
 // 영화 카드 생성 및 DOM에 추가.
@@ -49,7 +49,7 @@ function displayMovies(moviesToDisplay) {
         movieCard.appendChild(movieTitle);
         movieCard.appendChild(rating);
 
-        // 모달 클릭 이벤트 추가..
+        // 영화카드 클릭 이벤트 추가..
         movieCard.addEventListener('click', () => showMovieDetails(movie));
 
         // 컨테이너에 카드 추가
@@ -95,15 +95,13 @@ function showMovieDetails(movie){
     closeButton.addEventListener('click', () => {
         document.body.removeChild(modal)
     });
+
     // 백그라운드를 클릭해도 닫아지게 하기
     modal.addEventListener('click', (e)=>{
         if(e.target === modal){  //모달(배경) 클릭 시 닫음
-            
             document.body.removeChild(modal)
         }
     })
-
-    
 
     modalContent.appendChild(title);
     modalContent.appendChild(poster);
