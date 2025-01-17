@@ -43,8 +43,5 @@ moviesContainer.addEventListener('click', (e) => {
     }
 });
 
-
-
-
 // 인기 영화 초기 로드
 loadPopularMovies();

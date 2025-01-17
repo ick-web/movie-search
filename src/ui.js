@@ -28,9 +28,6 @@ export const renderMovies = (movies, container) => {
     movieCard.appendChild(movieTitle);
     movieCard.appendChild(rating);
 
-    // 영화카드 클릭 이벤트 추가..
-    movieCard.addEventListener('click', () => showMovieDetails(movie));
-
     // 컨테이너에 카드 추가
     container.appendChild(movieCard);
 });
